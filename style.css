@@ -1,0 +1,204 @@
+/* Color Palette */
+:root {
+  --coffee: #4b2e2e;
+  --cream: #fff7f0;
+  --tan: #e6ccb2;
+  --dark-tan: #b08968;
+  --accent: #d5bdaf;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--cream);
+  color: var(--coffee);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--coffee);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a:hover {
+  color: var(--dark-tan);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--coffee);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.btn {
+  font-size: 1rem;
+  display: inline-block;
+  background-color: var(--coffee);
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--dark-tan);
+}
+
+.hero-img img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* About Details Section */
+.about-details {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+}
+.about-details h3 {
+  font-size: 2rem;
+  color: var(--coffee);
+  margin-bottom: 1rem;
+}
+.about-details h4 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  color: var(--dark-tan);
+}
+.about-details .desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+/* Features (used in Why BrewPure) */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  flex: 1 1 250px;
+  padding: 1rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.feature h4 {
+  color: var(--coffee);
+  margin-bottom: 0.5rem;
+}
+
+/* Locations List */
+.locations {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.locations li {
+  background-color: var(--tan);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--coffee);
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    margin-top: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .features {
+    flex-direction: column;
+  }
+}
